@@ -60,54 +60,54 @@ const Featured = () => {
 		}
 	];
 	return (
-		<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+		<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} className="mb-[50]">
 			<View className="flex flex-row gap-4">
 				{lists.map(function (item) {
 					return (
-						<View className=" w-[300] h-[260] bg-gray-50 rounded-2xl">
-							<View className="relative w-[300] h-[150]">
-								<ImageBackground className="w-[300] h-[150] rounded-2xl" source={item.image} imageStyle={{ borderRadius: 15 }}></ImageBackground>
-								<LinearGradient className="absolute top-0 left-0 w-[300] h-[150]  rounded-2xl " colors={["#00000000", "#00000000", "#00000000", "#000000d1", "#000"]} />
-								<View className="absolute  bottom-[20] left-[10] flex flex-row">
-									<View className=" border border-white px-3 flex flex-row items-center py-1 mr-3 rounded-2xl ">
+						<View className=" w-[300] h-[260] bg-gray-50 rounded-2xl" key={item.id}>
+							<View className="relative w-[300] h-[170]">
+								<ImageBackground className="w-[300] h-[170] rounded-2xl" source={item.image} imageStyle={{ borderRadius: 15 }}></ImageBackground>
+								<LinearGradient className="absolute top-0 left-0 w-[300] h-[170]  rounded-2xl " colors={["#00000000", "#00000000", "#00000000", "#000000d1", "#000"]} />
+								<View className="absolute  bottom-[20] left-[20] flex flex-row">
+									<View className="flex flex-row items-center px-3 py-1 mr-3 border border-white rounded-2xl">
 										<Ionicons name="bed-outline" size={15} color="white" />
-										<Text className="text-white text-xs pl-2">{item.bed} Bed </Text>
+										<Text className="pl-2 text-xs text-white">{item.bed} Bed </Text>
 									</View>
-									<View className=" border border-white px-3 flex flex-row items-center py-1 mr-3 rounded-2xl ">
+									<View className="flex flex-row items-center px-3 py-1 mr-3 border border-white rounded-2xl">
 										<FontAwesome name="bathtub" size={15} color="white" />
-										<Text className="text-white text-xs pl-2">{item.bath} Bath </Text>
+										<Text className="pl-2 text-xs text-white">{item.bath} Bath </Text>
 									</View>
 								</View>
-								<View className="shadow w-[20] h-[20] flex items-center justify-center rounded-full bg-white absolute top-[10] left-[10]">
+								<View className="shadow w-[24] h-[24] flex items-center justify-center rounded-full bg-white absolute top-[20] left-[20]">
 									<Text className="font-xs">
-										<AntDesign name="heart" size={10} color="red" />
+										<AntDesign name="heart" size={12} color="red" />
 									</Text>
 								</View>
-								<View className="shadow w-[20] h-[20] flex items-center justify-center rounded-full bg-white absolute top-[10] right-[10]">
+								<View className="shadow w-[24] h-[24] flex items-center justify-center rounded-full bg-white absolute top-[20] right-[20]">
 									<Text className="font-xs">
-										<Feather name="more-horizontal" size={10} color="black" />
+										<Feather name="more-horizontal" size={12} color="black" />
 									</Text>
 								</View>
 							</View>
 							<View className="px-3">
-								<View className="flex flex-row justify-between items-start">
+								<View className="flex flex-row items-start justify-between">
 									<View>
-										<Text className="text-lg font-semi-bold mt-1">{item.title}</Text>
-										<Text className="text-xs font-semi-bold text-gray-500">
+										<Text className="mt-1 text-lg font-semi-bold">{item.title}</Text>
+										<Text className="text-xs text-gray-500 font-semi-bold">
 											<FontAwesome5 name="map-marker-alt" size={10} color="black" /> {item.address}
 										</Text>
 									</View>
 									<View>
-										<Text className="text-lg font-semi-bold mt-1">{item.price}</Text>
+										<Text className="mt-1 text-lg font-semi-bold">{item.price}</Text>
 									</View>
 								</View>
 								<View className="w-[300] ">
-									<View className="flex flex-row justify-start  gap-x-3 mt-3 items-center">
+									<View className="flex flex-row items-center justify-start mt-3 gap-x-3">
 										<View className="bg-black rounded-lg">
-											<Text className="text-white text-xs px-3 py-2">Book Now</Text>
+											<Text className="px-3 py-2 text-xs text-white">Book Now</Text>
 										</View>
 										<View>
-											<Text className="text-black   text-xs">
+											<Text className="text-xs text-black">
 												4.5 <FontAwesome name="star" size={14} color="orange" />
 											</Text>
 										</View>

@@ -9,7 +9,7 @@ import SearchInput from "./components/SearchInput";
 
 export default function Page() {
 	return (
-		<ScrollView className="flex-1 p-4">
+		<ScrollView className="flex-1 p-4 bg-gray-100">
 			<Header />
 			<SearchInput />
 			<Menus />
@@ -17,7 +17,6 @@ export default function Page() {
 			<CarouselCard />
 			<Heading title="Featured" />
 			<Featured />
-			<Heading title="Recommended for you" />
 		</ScrollView>
 	);
 }

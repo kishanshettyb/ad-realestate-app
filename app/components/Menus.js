@@ -5,23 +5,23 @@ const Menus = () => {
 	return (
 		<ScrollView horizontal={true} showsHorizontalScrollIndicator={false} className="mt-5">
 			<View className="flex flex-row gap-2">
-				<View className="bg-blue-600 px-5 py-3 rounded-xl">
-					<Text className="text-white text-center marker: font-bold">Popular</Text>
+				<View className="px-5 py-3 bg-blue-600 rounded-lg">
+					<Text className="font-bold text-center text-white marker:">Popular</Text>
 				</View>
-				<View className="bg-blue-400 px-5 py-3 rounded-xl">
-					<Text className="text-white text-center marker: font-bold">Rent</Text>
+				<View className="px-5 py-3 bg-blue-400 rounded-lg">
+					<Text className="font-bold text-center text-white marker:">Rent</Text>
 				</View>
-				<View className="bg-blue-400 px-5 py-3 rounded-xl">
-					<Text className="text-white text-center marker: font-bold">Sell</Text>
+				<View className="px-5 py-3 bg-blue-400 rounded-lg">
+					<Text className="font-bold text-center text-white marker:">Sell</Text>
 				</View>
-				<View className="bg-blue-400 px-5 py-3 rounded-xl">
-					<Text className="text-white text-center marker: font-bold">Buy</Text>
+				<View className="px-5 py-3 bg-blue-400 rounded-lg">
+					<Text className="font-bold text-center text-white marker:">Buy</Text>
 				</View>
-				<View className="bg-blue-400 px-5 py-3 rounded-xl">
-					<Text className="text-white text-center marker: font-bold">Properties</Text>
+				<View className="px-5 py-3 bg-blue-400 rounded-lg">
+					<Text className="font-bold text-center text-white marker:">Properties</Text>
 				</View>
-				<View className="bg-blue-400 px-5 py-3 rounded-xl">
-					<Text className="text-white  text-center marker:font-bold">Villa</Text>
+				<View className="px-5 py-3 bg-blue-400 rounded-lg">
+					<Text className="text-center text-white marker:font-bold">Villa</Text>
 				</View>
 			</View>
 		</ScrollView>

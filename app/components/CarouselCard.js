@@ -61,12 +61,12 @@ export default class CarouselCard extends React.Component {
 			<View>
 				<View className="relative w-full">
 					<Image className="rounded-lg w-full h-[200]" source={item.image} />
-					<View className="absolute shadow-sm border-2 border-gray-50 ml-4 mt-4 bg-white rounded-2xl px-4 py-2">
+					<View className="absolute px-4 py-2 mt-4 ml-4 bg-white border-2 shadow-sm border-gray-50 rounded-2xl">
 						<Text>
 							{item.ratings} <FontAwesome name="star" size={18} color="orange" />
 						</Text>
 					</View>
-					<View className="bg-gray-200 p-5 rounded-3xl absolute w-full -bottom-10">
+					<View className="absolute w-full p-5 mb-5 bg-white rounded-3xl -bottom-10">
 						<Text className="text-gray-600">{item.sqft} sqft</Text>
 						<Text className="text-2xl font-bold">
 							{item.price}
@@ -84,7 +84,7 @@ export default class CarouselCard extends React.Component {
 	render() {
 		return (
 			<SafeAreaView className="flex-1 h-[240] w-full justify-center">
-				<View className="flex-1 flex-row">
+				<View className="flex-row flex-1">
 					<Carousel
 						layout={"stack"}
 						layoutCardOffset={`50`}

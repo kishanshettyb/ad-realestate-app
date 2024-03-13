@@ -3,12 +3,12 @@ import React from "react";
 
 const Heading = (props) => {
 	return (
-		<View className="flex flex-row justify-between items-center my-5 ">
+		<View className="flex flex-row items-center justify-between my-5 ">
 			<View>
-				<Text className="font-bold text-lg  ">{props.title}</Text>
+				<Text className="text-xl font-semi-bold ">{props.title}</Text>
 			</View>
-			<View className="p-2 rounded-lg bg-gray-50">
-				<Text>View all</Text>
+			<View className="p-2 ">
+				<Text className="text-xs">View all</Text>
 			</View>
 		</View>
 	);
